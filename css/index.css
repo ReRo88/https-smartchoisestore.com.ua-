@@ -1,0 +1,253 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    padding: 20px; /* Додаємо відступи для мобільних пристроїв */
+}
+
+p {
+    font-size: 48px;
+    width: 450px;
+    height: 500px;
+    background-color: aquamarine;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.telegram-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: blueviolet;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.telegram-btn:hover {
+    background-color: #00455a;
+    border-color: #b0d6e8;
+}
+
+.logo {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.additional-text {
+    font-size: 48px;
+    font-family: 'Georgia', serif;
+    margin-top: 20px;
+    color: #333;
+}
+
+.side-image {
+    width: 550px;
+    height: auto;
+    display: block;
+    position: absolute;
+}
+
+.left {
+    left: 0;
+    top: 250px;
+}
+
+.right {
+    right: 0;
+    top: 250px;
+}
+
+.new-image {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    left: 300px;
+    top: 900px;
+    z-index: 1;
+}
+
+.independent-text1 {
+    position: absolute;
+    top: 1050px;
+    left: 7%;
+    font-size: 24px;
+    color: black;
+}
+
+.independent-text1 h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.independent-text1 p {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    font-size: 24px;
+    padding-left: 65px;
+}
+
+.fixed-image {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    left: 900px;
+    top: 900px;
+    z-index: 1;
+}
+
+.niter-text {
+    position: absolute;
+    top: 1050px;
+    left: 45%;
+    font-size: 24px;
+    color: black;
+}
+
+.niter-text h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.niter-text p {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    font-size: 24px;
+    padding-right: 190px;
+}
+
+.end-image {
+    width: 125px;
+    height: auto;
+    position: absolute;
+    left: 1500px;
+    top: 900px;
+    z-index: 1;
+}
+
+.end-text {
+    position: absolute;
+    top: 1050px;
+    left: 73%;
+    font-size: 24px;
+    color: black;
+}
+
+.end-text h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.end-text p {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    font-size: 24px;
+    padding-right: 50px;
+}
+
+/* Медіа-запити для адаптації під мобільні пристрої */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    p {
+        width: 100%;
+        font-size: 24px;
+        height: auto;
+    }
+
+    .side-image {
+        width: 100%;
+        position: relative;
+        top: 20px;
+    }
+
+    .left {
+        position: relative;
+        left: 0;
+    }
+
+    .right {
+        position: relative;
+        right: 0;
+    }
+
+    .new-image {
+        width: 100px;
+        top: 450px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .independent-text1 h2,
+    .independent-text1 p,
+    .niter-text h2,
+    .niter-text p,
+    .end-text h2,
+    .end-text p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .fixed-image {
+        width: 100px;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .end-image {
+        width: 100px;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .telegram-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .additional-text {
+        font-size: 24px;
+    }
+
+    .logo {
+        width: 20px;
+    }
+}
